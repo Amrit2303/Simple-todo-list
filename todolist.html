@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+<body>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <title>To do List</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="todo.css">
+  
+
+  <div class="container my-4">
+    <h2>To Do List by Amrit</h2>
+
+    <div class="form-group">
+      <label for="Title">Title</label>
+      <input type="text" class="form-control" id="title" placeholder="">
+    </div>
+    <small id="l1" class="form-text text-muted">Add an item to the List</small>
+    <br>
+    <div class="form-group">
+      <label for="Decription">Decription</label>
+      <input type="text" class="form-control" id="description" placeholder="">
+    </div>
+
+    <button  class="btn btn-secondary" id="add">Add to List</button>
+    <button class="btn btn-secondary" id="clear" onclick="clearclean()">Clear List</button>
+
+    <div id="item" class="my-4">
+      <h2>Your Items</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Item Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table_1">
+          <tr>
+            <th scope="row">1</th>
+            <td>Get Some coffee</td>
+            <td>It's good for health</td>
+            <td><button type="button" class="btn  btn-primary">Delete</button></td>
+            
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </head>
+</body>
+<script src="todolist.js"></script>
+
+</html>
